@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+    width="1100" height="650" viewBox="0 0 1100 650">
+    <rect width="1100" height="650" fill="white"/>
+    <text x="550" y="55" text-anchor="middle"
+          font-size="27" font-weight="bold"
+          font-family="Arial">BINARY PALINDROME - NPDA</text>
+    <text x="550" y="90" text-anchor="middle"
+          font-size="17" font-family="Arial">Nondeterministically guess the midpoint and compare symbols</text>
+    
+    <circle cx="170" cy="320" r="48"
+            fill="#EAF2FF" stroke="#174EA6" stroke-width="3"/>
+    
+    <text x="170" y="327" text-anchor="middle"
+          font-size="22" font-family="Arial">q0</text>
+    
+    <circle cx="460" cy="320" r="48"
+            fill="#EAF2FF" stroke="#174EA6" stroke-width="3"/>
+    
+    <text x="460" y="327" text-anchor="middle"
+          font-size="22" font-family="Arial">q1</text>
+    
+    <circle cx="780" cy="320" r="48"
+            fill="#EAF2FF" stroke="#174EA6" stroke-width="3"/>
+    
+    <text x="780" y="327" text-anchor="middle"
+          font-size="22" font-family="Arial">q2</text>
+    
+    <circle cx="1000" cy="320" r="48"
+            fill="#EAF2FF" stroke="#174EA6" stroke-width="3"/>
+    
+        <circle cx="1000" cy="320" r="40"
+                fill="none" stroke="#174EA6" stroke-width="2"/>
+        
+    <text x="1000" y="327" text-anchor="middle"
+          font-size="22" font-family="Arial">qf</text>
+    
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10"
+              refX="8" refY="3" orient="auto">
+        <path d="M0,0 L0,6 L9,3 z" fill="#174EA6"/>
+      </marker>
+    </defs>
+    <line x1="40" y1="320" x2="115" y2="320"
+          stroke="#174EA6" stroke-width="3"
+          marker-end="url(#arrow)"/>
+    <text x="75" y="285" text-anchor="middle"
+          font-size="17" font-family="Arial"
+          fill="#222">Start</text>
+    
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10"
+              refX="8" refY="3" orient="auto">
+        <path d="M0,0 L0,6 L9,3 z" fill="#174EA6"/>
+      </marker>
+    </defs>
+    <line x1="215" y1="320" x2="410" y2="320"
+          stroke="#174EA6" stroke-width="3"
+          marker-end="url(#arrow)"/>
+    <text x="310" y="285" text-anchor="middle"
+          font-size="17" font-family="Arial"
+          fill="#222">Read 0 / push 0</text>
+    
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10"
+              refX="8" refY="3" orient="auto">
+        <path d="M0,0 L0,6 L9,3 z" fill="#174EA6"/>
+      </marker>
+    </defs>
+    <line x1="460" y1="260" x2="460" y2="150"
+          stroke="#174EA6" stroke-width="3"
+          marker-end="url(#arrow)"/>
+    <text x="570" y="190" text-anchor="middle"
+          font-size="17" font-family="Arial"
+          fill="#222">Read 1 / push 1</text>
+    
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10"
+              refX="8" refY="3" orient="auto">
+        <path d="M0,0 L0,6 L9,3 z" fill="#174EA6"/>
+      </marker>
+    </defs>
+    <line x1="510" y1="320" x2="730" y2="320"
+          stroke="#174EA6" stroke-width="3"
+          marker-end="url(#arrow)"/>
+    <text x="620" y="285" text-anchor="middle"
+          font-size="17" font-family="Arial"
+          fill="#222">ε: Guess midpoint</text>
+    
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10"
+              refX="8" refY="3" orient="auto">
+        <path d="M0,0 L0,6 L9,3 z" fill="#174EA6"/>
+      </marker>
+    </defs>
+    <line x1="780" y1="265" x2="780" y2="150"
+          stroke="#174EA6" stroke-width="3"
+          marker-end="url(#arrow)"/>
+    <text x="900" y="190" text-anchor="middle"
+          font-size="17" font-family="Arial"
+          fill="#222">Read same symbol / pop</text>
+    
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10"
+              refX="8" refY="3" orient="auto">
+        <path d="M0,0 L0,6 L9,3 z" fill="#174EA6"/>
+      </marker>
+    </defs>
+    <line x1="830" y1="320" x2="950" y2="320"
+          stroke="#174EA6" stroke-width="3"
+          marker-end="url(#arrow)"/>
+    <text x="890" y="285" text-anchor="middle"
+          font-size="17" font-family="Arial"
+          fill="#222">Input consumed and stack empty</text>
+    
+<text x="460" y="440" text-anchor="middle"
+      font-size="18" font-family="Arial">
+Push first half
+</text>
+<text x="780" y="440" text-anchor="middle"
+      font-size="18" font-family="Arial">
+Match second half
+</text>
+
+    </svg>

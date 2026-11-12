@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+    width="1100" height="650" viewBox="0 0 1100 650">
+    <rect width="1100" height="650" fill="white"/>
+    <text x="550" y="55" text-anchor="middle"
+          font-size="27" font-weight="bold"
+          font-family="Arial">ARITHMETIC EXPRESSION VALIDATOR - CFG</text>
+    <text x="550" y="90" text-anchor="middle"
+          font-size="17" font-family="Arial">Grammar for arithmetic expressions with operator precedence</text>
+    
+<rect x="100" y="140" width="900" height="420"
+      rx="18" fill="#F3F7FF" stroke="#174EA6" stroke-width="3"/>
+
+<text x="550" y="190" text-anchor="middle"
+      font-size="25" font-weight="bold" font-family="Arial">
+Context-Free Grammar Productions
+</text>
+
+<g font-family="Arial" font-size="22" fill="#222">
+<text x="170" y="250">E  → T E'</text>
+<text x="170" y="295">E' → + T E' | - T E' | ε</text>
+<text x="170" y="340">T  → F T'</text>
+<text x="170" y="385">T' → * F T' | / F T' | ε</text>
+<text x="170" y="430">F  → (E) | id | number</text>
+</g>
+
+<rect x="170" y="465" width="760" height="65"
+      rx="10" fill="#DCEBFF" stroke="#174EA6" stroke-width="2"/>
+
+<text x="550" y="505" text-anchor="middle"
+      font-size="19" font-family="Arial">
+Example: (5 + 2) * 3
+</text>
+
+    </svg>

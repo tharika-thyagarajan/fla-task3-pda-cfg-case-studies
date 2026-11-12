@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+    width="1100" height="650" viewBox="0 0 1100 650">
+    <rect width="1100" height="650" fill="white"/>
+    <text x="550" y="55" text-anchor="middle"
+          font-size="27" font-weight="bold"
+          font-family="Arial">BALANCED PARENTHESES - PDA</text>
+    <text x="550" y="90" text-anchor="middle"
+          font-size="17" font-family="Arial">Push opening brackets and pop matching closing brackets</text>
+    
+    <circle cx="300" cy="320" r="48"
+            fill="#EAF2FF" stroke="#174EA6" stroke-width="3"/>
+    
+    <text x="300" y="327" text-anchor="middle"
+          font-size="22" font-family="Arial">q0</text>
+    
+    <circle cx="800" cy="320" r="48"
+            fill="#EAF2FF" stroke="#174EA6" stroke-width="3"/>
+    
+        <circle cx="800" cy="320" r="40"
+                fill="none" stroke="#174EA6" stroke-width="2"/>
+        
+    <text x="800" y="327" text-anchor="middle"
+          font-size="22" font-family="Arial">qf</text>
+    
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10"
+              refX="8" refY="3" orient="auto">
+        <path d="M0,0 L0,6 L9,3 z" fill="#174EA6"/>
+      </marker>
+    </defs>
+    <line x1="100" y1="320" x2="245" y2="320"
+          stroke="#174EA6" stroke-width="3"
+          marker-end="url(#arrow)"/>
+    <text x="170" y="290" text-anchor="middle"
+          font-size="17" font-family="Arial"
+          fill="#222">Start</text>
+    
+<path d="M300 270 C210 100 390 100 300 270"
+      fill="none" stroke="#174EA6" stroke-width="3"/>
+<text x="300" y="125" text-anchor="middle"
+      font-size="18" font-family="Arial">
+Push (, [, { onto stack
+</text>
+
+<path d="M300 370 C210 540 390 540 300 370"
+      fill="none" stroke="#174EA6" stroke-width="3"/>
+<text x="300" y="535" text-anchor="middle"
+      font-size="18" font-family="Arial">
+Read matching closing bracket and pop
+</text>
+
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10"
+              refX="8" refY="3" orient="auto">
+        <path d="M0,0 L0,6 L9,3 z" fill="#174EA6"/>
+      </marker>
+    </defs>
+    <line x1="350" y1="320" x2="750" y2="320"
+          stroke="#174EA6" stroke-width="3"
+          marker-end="url(#arrow)"/>
+    <text x="550" y="285" text-anchor="middle"
+          font-size="17" font-family="Arial"
+          fill="#222">Input consumed and stack empty</text>
+    
+    </svg>
